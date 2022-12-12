@@ -41,6 +41,11 @@
   font-size: 16px;
 }
 
+.user-component__subtitle i {
+  margin-left: 5px;
+  color: rgb(255, 85, 85);
+}
+
 .user-component__column:last-child {
   color: var(--gray-color);
   display: flex;
