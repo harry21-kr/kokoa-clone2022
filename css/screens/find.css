@@ -111,3 +111,22 @@
   bottom: 5px;
   font-size: 14px;
 }
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+  }
+}
+
+.open-post__like-count:hover i {
+  will-change: transform;
+  animation: heartBeat 0.5s ease-in-out infinite;
+}
