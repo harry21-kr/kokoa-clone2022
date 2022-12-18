@@ -14,7 +14,7 @@
 /* Screens */
 
 @import "screens/login.css";
-@import "screens/friends.css";
+@import "screens/dashboard.css";
 @import "screens/find.css";
 @import "screens/more.css";
 @import "screens/settings.css";
@@ -38,6 +38,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.5;
+  opacity: 0.1;
   z-index: -999;
 }

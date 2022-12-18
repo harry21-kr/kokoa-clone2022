@@ -1,10 +1,10 @@
-.friends-screen__channel {
-  margin-top: 25px;
-  border-top: var(--main-border);
+.dashboard-screen__channel {
+  margin-top: 10px;
+
   padding-top: 15px;
 }
 
-.friends-screen__channel-header {
+.dashboard-screen__channel-header {
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
@@ -34,7 +34,4 @@
   font-size: 122px;
   animation: hideSplashScreen 0.5s ease-in-out forwards;
   animation-delay: 0.5s;
-}
-
-.blala {
 }
