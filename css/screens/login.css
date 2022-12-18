@@ -1,4 +1,27 @@
+@keyframes showWelcomeAnimationTitle {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes showWelcomeAnimationText {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0.5;
+    transform: none;
+  }
+}
+
 .welcome-header {
+  color: white;
   margin: 80px 0px 70px 0px;
   text-align: center;
   display: flex;
@@ -8,44 +31,68 @@
 
 .welcome-header__title {
   margin-bottom: 30px;
-  font-size: 30px;
+  font-size: 40px;
+  font-weight: 600;
+  transform: translateX(-30px);
+  animation: showWelcomeAnimationTitle 1s ease-in-out forwards;
 }
 
 .welcome-header__text {
   width: 70%;
   font-size: 20px;
-  opacity: 0.5;
+  opacity: 0;
   font-weight: 400;
+  transform: translateX(-30px);
+  animation: showWelcomeAnimationText 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes showWelcomeAnimationForm {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
 }
 
 .login-form {
+  color: white;
   margin: 0px 30px 25px 30px;
   display: flex;
   flex-direction: column;
+  opacity: 0;
+  transform: translateX(-30px);
+  animation: showWelcomeAnimationForm 1s ease-in-out forwards;
+  animation-delay: 1s;
 }
 
 .login-form input {
+  color: white;
   border: none;
   padding: 25px 0px;
   font-size: 20px;
   margin-bottom: 25px;
+  background-color: transparent;
 }
 
 .login-form input:not([type="submit"]) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   transition: border-color 0.2s ease-in-out;
 }
 
 .login-form input::placeholder {
-  opacity: 0.6;
+  opacity: 1;
+  color: white;
 }
 
 .login-form input:focus {
-  border-color: var(--yellow);
+  border-color: var(--nomad-color);
 }
 
 .login-form input[type="submit"] {
-  background-color: var(--yellow);
+  background-color: var(--nomad-color);
   cursor: pointer;
   font-size: 18px;
   padding: 20px 0px;
@@ -57,4 +104,43 @@
   text-decoration: none;
   color: inherit;
   font-size: 15px;
+}
+
+@keyframes showNomadAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.nomad__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nomad__info-text {
+  color: white;
+  font-size: 30px;
+  margin: 30px 0px;
+  animation: showNomadAnimation 1s ease-in-out forwards;
+  transform: translateX(-30px);
+  animation-delay: 3s;
+  opacity: 0;
+}
+
+.nomad__info-url {
+  font-size: 20px;
+  animation: showNomadAnimation 1s ease-in-out forwards;
+  transform: translateX(-30px);
+  animation-delay: 4s;
+  opacity: 0;
+}
+
+.nomad__info-url a {
+  color: var(--nomad-color);
 }

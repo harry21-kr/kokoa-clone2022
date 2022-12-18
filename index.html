@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to KakaoTalk</title>
+    <title>Welcome Page</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <div class="background-img">
+      <img
+        src="https://www.filepicker.io/api/file/Tu60vRVBQGablw9OAOZz"
+        alt=""
+      />
+    </div>
+
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -24,19 +31,35 @@
     </div>
 
     <header class="welcome-header">
-      <h1 class="welcome-header__title">Welcome to KakaoTalk</h1>
+      <h1 class="welcome-header__title">Welcome.</h1>
       <p class="welcome-header__text">
-        If you have a Kakao Account,<br />
+        If you have a Account,<br />
         log in with your email or phone number.
       </p>
     </header>
 
     <form action="friends.html" method="get" class="login-form">
-      <input name="username" type="text" placeholder="Email or phone number" />
-      <input name="password" type="password" placeholder="Password" />
+      <input
+        required
+        name="username"
+        type="text"
+        placeholder="Email or phone number"
+      />
+      <input required name="password" type="password" placeholder="Password" />
       <input type="submit" value="Log In" />
-      <a href="#">Find Kakao Account or Password</a>
+      <a href="#">Find Account or Password</a>
     </form>
+
+    <footer class="nomad__info">
+      <div class="nomad__info-text">
+        <span>Clone Startups. Learn to code.</span>
+      </div>
+      <div class="nomad__info-url">
+        <a href="https://nomadcoders.co/" target="_blank"
+          >Go to Nomadcoders ></a
+        >
+      </div>
+    </footer>
 
     <div id="no-mobile"><span>Your screen is too big. </span></div>
 

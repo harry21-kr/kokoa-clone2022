@@ -2,10 +2,11 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #f9f9fa;
+  background-color: #111827;
   padding: 20px 50px;
   box-sizing: border-box;
   border-top: var(--main-border);
+  color: white;
 }
 
 .nav__ul {
@@ -23,7 +24,7 @@
   }
 
   50% {
-    transform: translateY(-5px) rotateY(360deg);
+    transform: rotateY(180deg);
   }
 
   100% {
@@ -60,19 +61,20 @@
 }
 
 .nav__li {
-  transform: translateY(60px);
+  transform: translateX(-10px);
   opacity: 0;
   animation: appearButtonAnimation 0.3s ease-in-out forwards;
+  animation-delay: 0.8s;
 }
 
 .nav__li:nth-child(2) {
-  animation-delay: 0.2s;
+  animation-delay: 0.9s;
 }
 
 .nav__li:nth-child(3) {
-  animation-delay: 0.4s;
+  animation-delay: 1s;
 }
 
 .nav__li:last-child {
-  animation-delay: 0.6s;
+  animation-delay: 1.1s;
 }
