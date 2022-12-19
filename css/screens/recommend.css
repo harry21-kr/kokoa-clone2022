@@ -17,8 +17,8 @@ body {
 }
 
 .recommended-friends {
-  border-top: var(--main-border);
-  border-bottom: var(--main-border);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   padding: 25px 0px;
 }
 
@@ -55,7 +55,7 @@ body {
 
 .open-post__hashtags {
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -85,7 +85,7 @@ body {
 }
 
 .open-post__member-status {
-  color: #ffc8e9;
+  color: tomato;
 }
 
 .open-post__photo img {
@@ -133,4 +133,35 @@ body {
 .open-post__like-count:hover i {
   will-change: transform;
   animation: heartBeat 0.5s ease-in-out infinite;
+}
+
+@keyframes showRecommendPage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.icon-row {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: showRecommendPage 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.recommended-friends {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: showRecommendPage 1s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+
+.open-chat {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: showRecommendPage 1s ease-in-out forwards;
+  animation-delay: 2s;
 }

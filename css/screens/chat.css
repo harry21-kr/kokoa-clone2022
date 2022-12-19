@@ -1,105 +1,66 @@
-.chat-screen .alt-header,
-.chat-screen .status-bar {
-  top: 0;
-  position: fixed;
-  width: 100%;
-  box-sizing: border-box;
-  z-index: 10;
-}
-
-.chat-screen .status-bar {
-  z-index: 2;
-}
-
-.chat-screen .alt-header {
-  top: 10px;
-  z-index: 1;
-}
-
-@keyframes fadeIn {
-  from {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-
-  to {
-    transform: none;
-    opacity: 1;
-  }
-}
-
 .main-chat {
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  animation: fadeIn 1s ease-in-out;
 }
 
-.chat__timestamp {
-  background-color: rgba(00, 0, 0, 0.1);
-  color: white;
-  padding: 15px;
-  border-radius: 25px;
-  font-size: 14px;
-  margin-bottom: 25px;
-}
-
-.message-row {
-  width: 100%;
-  display: flex;
-  margin-bottom: 25px;
-}
-
-.message-row img {
-  width: 50px;
-  height: 50px;
+.wish__title {
+  position: relative;
+  padding: 10px 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
   border-radius: 20px;
-  margin-right: 10px;
 }
 
-.message__author {
-  opacity: 0.5;
+.wish__like {
+  position: absolute;
+  left: 20px;
+  bottom: 13px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 5px 10px;
+  border-radius: 10px;
   font-size: 16px;
-  display: block;
-  margin-bottom: 5px;
 }
 
-.message__info {
-  display: flex;
-  align-items: flex-end;
-}
-
-.message__bubble {
-  background-color: #6383af;
-
-  padding: 13px;
-  font-size: 18px;
-  border-radius: 15px;
-  border-top-left-radius: 0px;
-  margin-right: 5px;
-}
-
-.message__time {
+.wish__title h4 {
+  margin-top: 10px;
+  font-size: 16px;
   opacity: 0.5;
-  font-size: 12px;
+  color: var(--nomad-color);
 }
 
-.message-row--own {
-  display: flex;
-  justify-content: flex-end;
+.wish__text {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 30px 30px;
 }
 
-.message-row--own .message__bubble {
-  background-color: #2158a4;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 0px;
-  margin-right: 0px;
-  margin-left: 5px;
+@keyframes showWish {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
-.message-row--own .message__info {
-  flex-direction: row-reverse;
+.wish__text,
+.wish__title {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: showWish 1s ease-in-out forwards;
+}
+
+.wish__title {
+  animation-delay: 1.5s;
+}
+
+.wish__text {
+  animation-delay: 2s;
 }
 
 .reply {

@@ -17,3 +17,15 @@
 .icon-row__icon span {
   margin-top: 20px;
 }
+
+@keyframes hoverChangeColorIcon {
+  from {
+  }
+  to {
+    color: var(--nomad-color);
+  }
+}
+
+.icon-row__icon:hover {
+  animation: hoverChangeColorIcon 0.1s linear forwards;
+}

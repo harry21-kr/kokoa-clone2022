@@ -20,3 +20,20 @@
 .settings__setting-column:last-child {
   opacity: 0.5;
 }
+
+@keyframes showSettings {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.setting-list {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: showSettings 1s ease-in-out forwards;
+  animation-delay: 1.5s;
+}

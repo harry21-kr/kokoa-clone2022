@@ -58,3 +58,16 @@
   display: block;
   margin-bottom: 10px;
 }
+
+@keyframes hoverChangeColorDashboard {
+  from {
+  }
+
+  to {
+    color: var(--nomad-color);
+  }
+}
+
+.user-component__column:last-child a:hover {
+  animation: hoverChangeColorDashboard 0.1s linear forwards;
+}

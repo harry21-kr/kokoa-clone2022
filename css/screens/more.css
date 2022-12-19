@@ -1,16 +1,16 @@
 .more-screen .icon-row {
-  margin-top: 35px;
+  margin-top: 60px;
 }
 
 .more-suggestions {
-  border-top: var(--main-border);
-  margin-top: 40px;
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 .more-suggestions__title {
   margin-bottom: 30px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  padding-bottom: 30px;
 }
 
 .more-suggestions__icons {
@@ -22,13 +22,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 25px;
+
+  margin-left: 25px;
 }
 
 .more-suggestions__icon-image {
   width: 60px;
   height: 60px;
-  background-color: var(--nomad-color);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
   margin-bottom: 10px;
   display: flex;
@@ -42,4 +43,40 @@
 
 .more-suggestions__icon-text {
   color: rgba(255, 255, 255, 0.5);
+}
+
+@keyframes showMoreScreen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.more-component {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: showMoreScreen 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.more-suggestions {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: showMoreScreen 1s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes hoverChangeColorSuggestions {
+  from {
+  }
+  to {
+    color: tomato;
+  }
+}
+
+.more-suggestions__icon:hover {
+  animation: hoverChangeColorSuggestions 0.1s linear forwards;
 }
