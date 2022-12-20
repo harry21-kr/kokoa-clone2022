@@ -20,7 +20,7 @@
   }
 }
 
-.welcome-header {
+.nomad-header {
   color: white;
   margin: 80px 0px 70px 0px;
   text-align: center;
@@ -29,7 +29,7 @@
   align-items: center;
 }
 
-.welcome-header__title {
+.nomad-header__title {
   margin-bottom: 30px;
   font-size: 40px;
   font-weight: 600;
@@ -37,7 +37,7 @@
   animation: showWelcomeAnimationTitle 1s ease-in-out forwards;
 }
 
-.welcome-header__text {
+.nomad-header__text {
   width: 70%;
   font-size: 20px;
   opacity: 0;
@@ -116,14 +116,14 @@
   }
 }
 
-.nomad__info {
+.nomad-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.nomad__info-text {
+.nomad-info__text {
   color: white;
   font-size: 30px;
   margin: 30px 0px;
@@ -133,7 +133,7 @@
   opacity: 0;
 }
 
-.nomad__info-url {
+.nomad-info__url {
   font-size: 20px;
   animation: showNomadAnimation 1s ease-in-out forwards;
   transform: translateX(-30px);
@@ -141,6 +141,6 @@
   opacity: 0;
 }
 
-.nomad__info-url a {
+.nomad-info__url a {
   color: var(--nomad-color);
 }

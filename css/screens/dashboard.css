@@ -1,10 +1,10 @@
-.dashboard-screen__channel {
+.dashboard-screen__courses-challenges {
   margin-top: 10px;
 
   padding-top: 15px;
 }
 
-.dashboard-screen__channel-header {
+.dashboard-screen__courses-challenges--header {
   margin-bottom: 20px;
   padding-bottom: 10px;
   display: flex;

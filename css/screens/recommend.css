@@ -16,17 +16,17 @@ body {
   top: -8px;
 }
 
-.recommended-friends {
+.recommended-courses {
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   padding: 25px 0px;
 }
 
-.recommended-friends__title {
+.recommended-courses--title {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.recommended-friends span {
+.recommended-courses span {
   display: block;
   margin: 110px 0px;
   text-align: center;
@@ -34,75 +34,75 @@ body {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.open-chat__header {
+.recommend-challenges__header {
+  display: flex;
   margin-top: 10px;
   margin-bottom: 25px;
-  display: flex;
   justify-content: space-between;
+  align-items: center;
   color: rgba(255, 255, 255, 0.5);
 }
 
-.open-post {
+.recommend-challenges__post {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
-.open-post__title {
+.recommend-challenges--title {
   font-weight: 600;
   margin-bottom: 5px;
 }
 
-.open-post__hashtags {
+.recommend-challenges--hashtags {
   text-transform: uppercase;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.5);
 }
 
-.open-post__members {
+.recommend-challenges--members {
   margin-top: 5px;
   display: flex;
   align-items: center;
 }
 
-.open-post__members img {
+.recommend-challenges--members img {
   width: 20px;
   height: 20px;
   border-radius: 10px;
   margin-right: 5px;
 }
 
-.open-post__member-count {
+.recommend-challenges--member-count {
   color: rgba(255, 255, 255, 0.5);
   font-size: 14px;
 }
 
-.open-post__members .divider {
+.recommend-challenges--members .divider {
   width: 1px;
   height: 15px;
   margin: 0px 5px;
   color: rgba(255, 255, 255, 0.5);
 }
 
-.open-post__member-status {
+.recommend-challenges__member-status {
   color: tomato;
 }
 
-.open-post__photo img {
+.recommend-challenges--photo img {
   width: 70px;
   height: 70px;
   border-radius: 10px;
 }
 
-.open-post__photo span {
+.recommend-challenges--photo span {
   margin-left: 3px;
 }
 
-.open-post__photo {
+.recommend-challenges--photo {
   position: relative;
 }
 
-.open-post__like-count {
+.recommend-challenges--like-count {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -130,7 +130,7 @@ body {
   }
 }
 
-.open-post__like-count:hover i {
+.recommend-challenges--like-count:hover i {
   will-change: transform;
   animation: heartBeat 0.5s ease-in-out infinite;
 }
@@ -152,14 +152,14 @@ body {
   animation-delay: 1s;
 }
 
-.recommended-friends {
+.recommended-courses {
   opacity: 0;
   transform: translateX(-20px);
   animation: showRecommendPage 1s ease-in-out forwards;
   animation-delay: 1.5s;
 }
 
-.open-chat {
+.recommend-challenges {
   opacity: 0;
   transform: translateX(-20px);
   animation: showRecommendPage 1s ease-in-out forwards;
