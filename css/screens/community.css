@@ -13,15 +13,6 @@
   border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-@keyframes hoverChangeColorLi {
-  0% {
-  }
-
-  100% {
-    color: var(--nomad-color);
-  }
-}
-
 .community-nav > ul li {
   margin-top: 10px;
   margin-bottom: 30px;
@@ -51,17 +42,8 @@
   opacity: 0.5;
 }
 
-@keyframes hoverChangeColorMainLink {
-  0% {
-  }
-
-  100% {
-    color: tomato;
-  }
-}
-
 .community-notice a:hover {
-  animation: hoverChangeColorMainLink 0.1s linear forwards;
+  animation: hoverChangeColorNomad 0.1s linear forwards;
 }
 
 .community-notice__main {
@@ -88,21 +70,10 @@
   margin-bottom: 10px;
 }
 
-@keyframes showCommunityContent {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
 .community-nav,
 .community-notice {
   transform: translateX(-20px);
-  animation: showCommunityContent 1s ease-in-out forwards;
+  animation: showSlideAnimation 1s ease-in-out forwards;
 }
 
 .community-nav {

@@ -1,7 +1,9 @@
 @import "reset.css";
 @import "variables.css";
+@import "animation.css";
 
 /* Components */
+
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
@@ -10,6 +12,7 @@
 @import "components/badge.css";
 @import "components/icon-row.css";
 @import "components/no-mobile.css";
+@import "components/splash-screen.css";
 
 /* Screens */
 

@@ -1,0 +1,37 @@
+@keyframes showSlideAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes showSlideAnimationLowOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+    transform: none;
+  }
+}
+
+@keyframes hoverChangeColorNomad {
+  0% {
+  }
+
+  100% {
+    color: var(--nomad-color);
+  }
+}
+
+@keyframes hoverChangeColorTomato {
+  0% {
+  }
+
+  100% {
+    color: tomato;
+  }
+}

@@ -38,21 +38,11 @@
   padding: 30px 30px;
 }
 
-@keyframes showWish {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
 .wish__text,
 .wish__title {
   opacity: 0;
   transform: translateX(-20px);
-  animation: showWish 1s ease-in-out forwards;
+  animation: showSlideAnimation 1s ease-in-out forwards;
 }
 
 .wish__title {

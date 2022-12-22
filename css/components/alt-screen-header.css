@@ -33,19 +33,9 @@
   margin-left: 20px;
 }
 
-@keyframes showAitScreenHeader {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
 .alt-header {
   opacity: 0;
   transform: translateY(-20px);
-  animation: showAitScreenHeader 1s ease-in-out forwards;
+  animation: showSlideAnimation 1s ease-in-out forwards;
   animation-delay: 1s;
 }

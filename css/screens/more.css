@@ -45,27 +45,17 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
-@keyframes showMoreScreen {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
 .more-component {
   opacity: 0;
   transform: translateY(-20px);
-  animation: showMoreScreen 1s ease-in-out forwards;
+  animation: showSlideAnimation 1s ease-in-out forwards;
   animation-delay: 1s;
 }
 
 .more-suggestions {
   opacity: 0;
   transform: translateX(-20px);
-  animation: showMoreScreen 1s ease-in-out forwards;
+  animation: showSlideAnimation 1s ease-in-out forwards;
   animation-delay: 1.5s;
 }
 
@@ -78,5 +68,5 @@
 }
 
 .more-suggestions__icon:hover {
-  animation: hoverChangeColorSuggestions 0.1s linear forwards;
+  animation: hoverChangeColorTomato 0.1s linear forwards;
 }

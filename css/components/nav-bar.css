@@ -33,21 +33,10 @@
   right: -2px;
 }
 
-@keyframes appearButtonAnimation {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    transform: none;
-    opacity: 1;
-  }
-}
-
 .nav__li {
   transform: translateX(-10px);
   opacity: 0;
-  animation: appearButtonAnimation 0.3s ease-in-out forwards;
+  animation: showSlideAnimation 0.3s ease-in-out forwards;
   animation-delay: 0.8s;
 }
 
